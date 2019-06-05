@@ -17,7 +17,7 @@
       <pubDate>Fri, 26 Oct 2018 16:02:46 -0400</pubDate>
       
       <guid>/changelog.html</guid>
-      <description>AEUX change log [0.6.7] - 2019-02-25 Added  Ae backward compatibility to CC2014. Note: the Figma converter requires CC2018+ to download images through Ae.  [0.6.6] - 2019-02-15 Added  Ae panel image downloading for Figma. The online Figma converter generates images (if needed) and these image URLs are downloaded in the JSON file. Once imported into Ae, the panel downloads these images directly to a directory you specify. This process allows direct access to your images without granting the converter app or Google any access to your data.</description>
+      <description>AEUX change log [0.6.9] - 2019-XX-XX Added  New logo  Ae  More open precomp/unprecomp behavior to support non-AEUX grouping  Figma  Non-filled shape support Image downloading in browser as a zip file figma.aeux.io  Fixed Sketch  Prevented endless spinning when no layers selected  Ae  No longer breaks with empty boolean shapes Empty path objects wont crash the import Un-precomp preserves parenting hierarchy when moving layers between comps Smarter check before removing a precomp from the project if it exists multiple times in the current comp  [0.</description>
     </item>
     
     <item>

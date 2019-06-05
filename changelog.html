@@ -20,8 +20,10 @@
 
     
     
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    
 
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/themefisher-fonts.css">
     <link rel="stylesheet" type="text/css" href="../css/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="../css/magnific-popup.css">
@@ -36,20 +38,38 @@
 </head>
 
 <body id="body">
-<div class="container">
-    <nav class="navbar navigation" id="top-nav">
-        <a class="navbar-brand logo" href="../index.html">
-            <h1>AEUX</h1>
-        </a>
 
-        <button class="navbar-toggler hidden-lg-up float-lg-right" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-            <i class="tf-ion-android-menu"></i>
-        </button>
-        <div class="collapse navbar-toggleable-md" id="navbarResponsive">
-            
+<nav class="navbar sticky-top navbar-light bg-light navbar-expand-sm">
+    <a class="navbar-brand logo" href="#">
+      <img src="images/AEUX.svg" alt="AEUX logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <ul class="nav navbar-nav menu float-lg-right" id="top-nav">
+              <li class="active">
+                <a href=".#workflow">Workflow</a>
+              </li>
+              <li class="active">
+                <a href=".#precomp">Un-precomp</a>
+              </li>
+              <li class="active">
+                <a href=".https://figma.aeux.io">Figma Converter</a>
+              </li>
+              <li class="active">
+                <a href="./changelog">Change log</a>
+              </li>
+              <li class="active">
+                <a href=".#install">Install</a>
+              </li>
+            </ul>
+          
         </div>
-    </nav>
-</div>
+      </div>
+</nav>
 
 
     <section class="section">
@@ -61,9 +81,48 @@
 
 <h1 id="aeux-change-log">AEUX change log</h1>
 
-<h2 id="0-6-8-2019-04-15">[0.6.8] - 2019-04-15</h2>
+<h2 id="0-6-9-2019-xx-xx">[0.6.9] - 2019-XX-XX</h2>
+
+<h3 id="added">Added</h3>
+
+<ul>
+<li>New logo</li>
+</ul>
+
+<h4 id="ae">Ae</h4>
+
+<ul>
+<li>More open precomp/unprecomp behavior to support non-AEUX grouping</li>
+</ul>
+
+<h4 id="figma">Figma</h4>
+
+<ul>
+<li>Non-filled shape support</li>
+<li>Image downloading in browser as a zip file</li>
+<li>figma.aeux.io</li>
+</ul>
 
 <h3 id="fixed">Fixed</h3>
+
+<h4 id="sketch">Sketch</h4>
+
+<ul>
+<li>Prevented endless spinning when no layers selected</li>
+</ul>
+
+<h4 id="ae-1">Ae</h4>
+
+<ul>
+<li>No longer breaks with empty boolean shapes</li>
+<li>Empty path objects wont crash the import</li>
+<li>Un-precomp preserves parenting hierarchy when moving layers between comps</li>
+<li>Smarter check before removing a precomp from the project if it exists multiple times in the current comp</li>
+</ul>
+
+<h2 id="0-6-8-2019-04-15">[0.6.8] - 2019-04-15</h2>
+
+<h3 id="fixed-1">Fixed</h3>
 
 <ul>
 <li>Sketch 54 support</li>
@@ -73,7 +132,7 @@
 
 <h2 id="0-6-7-2019-02-25">[0.6.7] - 2019-02-25</h2>
 
-<h3 id="added">Added</h3>
+<h3 id="added-1">Added</h3>
 
 <ul>
 <li>Ae backward compatibility to CC2014. Note: the Figma converter requires CC2018+ to download images through Ae.</li>
@@ -81,7 +140,7 @@
 
 <h2 id="0-6-6-2019-02-15">[0.6.6] - 2019-02-15</h2>
 
-<h3 id="added-1">Added</h3>
+<h3 id="added-2">Added</h3>
 
 <ul>
 <li>Ae panel image downloading for Figma. The online <a href="https://aeux-55e58.firebaseapp.com" target="_blank">Figma converter</a> generates images (if needed) and these image URLs are downloaded in the JSON file. Once imported into Ae, the panel downloads these images directly to a directory you specify. This process allows direct access to your images without granting the converter app or Google any access to your data.</li>
@@ -90,7 +149,7 @@
 
 <h2 id="0-6-5-2019-01-15">[0.6.5] - 2019-01-15</h2>
 
-<h3 id="added-2">Added</h3>
+<h3 id="added-3">Added</h3>
 
 <ul>
 <li>Group dropshadows - only visible if you Precomp Groups</li>
@@ -117,7 +176,7 @@
 <li>The AE Window&gt;Extension menu for Figma</li>
 </ul>
 
-<h3 id="fixed-1">Fixed</h3>
+<h3 id="fixed-2">Fixed</h3>
 
 <ul>
 <li>Error when creating a comp less that 4px high or wide</li>
@@ -126,7 +185,7 @@
 
 <h2 id="0-6-4-2018-11-19">[0.6.4] - 2018-11-19</h2>
 
-<h3 id="fixed-2">Fixed</h3>
+<h3 id="fixed-3">Fixed</h3>
 
 <ul>
 <li>Rounding error on new comps not on a pixel</li>
@@ -134,7 +193,7 @@
 
 <h2 id="0-6-4-2018-11-19-1">[0.6.4] - 2018-11-19</h2>
 
-<h3 id="fixed-3">Fixed</h3>
+<h3 id="fixed-4">Fixed</h3>
 
 <ul>
 <li>Introduced bug where the Sketch panel didn&rsquo;t open</li>
@@ -142,7 +201,7 @@
 
 <h2 id="0-6-3-2018-11-15">[0.6.3] - 2018-11-15</h2>
 
-<h3 id="fixed-4">Fixed</h3>
+<h3 id="fixed-5">Fixed</h3>
 
 <ul>
 <li>Error on text with multiple line breaks</li>
@@ -150,7 +209,7 @@
 
 <h2 id="0-6-2-2018-10-08">[0.6.2] - 2018-10-08</h2>
 
-<h3 id="added-3">Added</h3>
+<h3 id="added-4">Added</h3>
 
 <ul>
 <li>Support for Sketch 52</li>
@@ -164,7 +223,7 @@
 
 <h2 id="0-6-1-2018-10-01">[0.6.1] - 2018-10-01</h2>
 
-<h3 id="added-4">Added</h3>
+<h3 id="added-5">Added</h3>
 
 <ul>
 <li>Un-precompose button. Now groups in AE may be converted to precomps, and also converted back to regular layers in the main comp with a single click.</li>
@@ -181,7 +240,7 @@
 <li>Simplified folder creation in Ae from 3 separate funcs down to one.</li>
 </ul>
 
-<h3 id="fixed-5">Fixed</h3>
+<h3 id="fixed-6">Fixed</h3>
 
 <ul>
 <li>Error when 3rd party tool docked on the canvas and trying to build to a selected comp</li>
@@ -191,7 +250,7 @@
 
 <h2 id="0-6-0-2018-09-04">[0.6.0] - 2018-09-04</h2>
 
-<h3 id="added-5">Added</h3>
+<h3 id="added-6">Added</h3>
 
 <ul>
 <li>In-panel messaging to explain errors and inaccurate layer representation (Sketch and AE)</li>
@@ -215,7 +274,7 @@
 
 <h2 id="0-5-8-2018-06-18">[0.5.8] - 2018-06-18</h2>
 
-<h3 id="added-6">Added</h3>
+<h3 id="added-7">Added</h3>
 
 <ul>
 <li>Auto-precomp of groups</li>
@@ -237,7 +296,7 @@
 
 <h2 id="0-5-7-2018-06-04">[0.5.7] - 2018-06-04</h2>
 
-<h3 id="added-7">Added</h3>
+<h3 id="added-8">Added</h3>
 
 <ul>
 <li>In-panel messaging system</li>
@@ -256,7 +315,7 @@
 
 <h2 id="0-5-6-2018-04-30">[0.5.6] - 2018-04-30</h2>
 
-<h3 id="added-8">Added</h3>
+<h3 id="added-9">Added</h3>
 
 <ul>
 <li>Sketch panel UI</li>
@@ -285,33 +344,35 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div class="col-md-3">
+            <div class="col-md-3 footer-row">
               <div class="footer-logo">AEUX</div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 footer-row">
               <ul>
                 <li class="">
                   <a href="#workflow">Workflow</a>
                 </li>
                 <li class="">
+                  <a href="#precomp">Un-precomp</a>
+                </li>
+                <li class="">
+                  <a href="https://figma.aeux.io">Figma Converter</a>
+                </li>
+                <li class="">
+                  <a href="/changelog">Change log</a>
+                </li>
+                <li class="">
                   <a href="#install">Install</a>
-                </li>
-                <li class="">
-                  <a href="changelog">Change log</a>
-                </li>
-                <li class="">
-                  <a href="https://github.com/google/sketch2ae/releases/download/0.6.8/AEUX.zip">Download</a>
                 </li>
               </ul>
             </div>
-            <div class="col-md-3">
-              <a href="mailto:motiondesign@google.com" class=""><i class="far fa-envelope"></i> Contact</a>
+            <div class="col-md-3 footer-row">
+              <a href="mailto:motiondesign@google.com" class=""><i class="far fa-envelope"></i> Contact</a><br>
+              <a href="https://github.com/google/sketch2ae" class=""><i class="fab fa-github"></i> view on GitHub</a>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 footer-row">
               Built by <a href="https://battleaxe.co/" class="" target="_blank">Adam Plouff</a> and your friends at <a href="https://wearesumux.appspot.com/" class="" target="_blank"><i class="fab fa-google"></i> motion design.</a>
             </div>
-          </div>
         </div>
       </div>
     </footer>
@@ -319,7 +380,8 @@
     
     <script src="js/vendor/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
